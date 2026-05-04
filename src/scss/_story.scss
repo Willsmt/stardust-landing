@@ -1,0 +1,191 @@
+@use "variables";
+
+// =============================================
+// STORY SECTION
+// =============================================
+
+.story {
+  position: relative;
+  z-index: 1;
+  padding: $space-xl $space-md;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba($color-gold, 0.3),
+      transparent
+    );
+  }
+
+  &__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space-xl;
+    align-items: center;
+
+    @media (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+      gap: $space-lg;
+    }
+  }
+
+  &__text {
+    .section-label {
+      text-align: left;
+    }
+  }
+
+  &__heading {
+    font-family: $font-heading;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+    color: $color-white;
+    margin-bottom: $space-md;
+    letter-spacing: 0.02em;
+
+    em {
+      font-style: italic;
+      color: $color-lavender;
+    }
+  }
+
+  &__body {
+    font-family: $font-body;
+    font-size: 1.05rem;
+    color: rgba($color-starlight, 0.7);
+    line-height: 1.9;
+    margin-bottom: $space-sm;
+  }
+
+  &__quote {
+    border-left: 2px solid rgba($color-gold, 0.5);
+    padding-left: 1.5rem;
+    margin: $space-md 0;
+
+    blockquote {
+      font-family: $font-sub;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: rgba($color-starlight, 0.8);
+      line-height: 1.7;
+    }
+
+    cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-family: $font-heading;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: $color-gold-dim;
+    }
+  }
+
+  &__visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__poster-frame {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 2/3;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba($color-gold, 0.3);
+      border-radius: 2px;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    &::before {
+      inset: -8px;
+    }
+    &::after {
+      inset: -16px;
+      border-color: rgba($color-gold, 0.1);
+    }
+  }
+
+  &__poster-bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid rgba($color-lavender, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+  }
+
+  &__poster-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    filter: saturate(0.7) brightness(0.75);
+    transition:
+      transform $transition-slow,
+      filter $transition-slow;
+
+    .story__poster-frame:hover & {
+      transform: scale(1.04);
+      filter: saturate(0.85) brightness(0.85);
+    }
+  }
+
+  &__poster-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 30%,
+      rgba($color-deep, 0.6) 65%,
+      rgba($color-deep, 0.95) 100%
+    );
+  }
+
+  &__poster-title {
+    position: relative;
+    z-index: 2;
+    font-family: $font-display;
+    font-size: 1.4rem;
+    color: rgba($color-white, 0.95);
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-shadow: 0 0 30px rgba($color-lavender, 0.9);
+    margin-bottom: 0.4rem;
+  }
+
+  &__poster-year {
+    position: relative;
+    z-index: 2;
+    font-family: $font-heading;
+    font-size: 0.6rem;
+    letter-spacing: 0.4em;
+    color: $color-gold;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,48 @@
+// =============================================
+// VARIABLES
+// =============================================
+
+// Colors
+$color-void: #03010a;
+$color-deep: #080318;
+$color-nebula: #110a2e;
+$color-indigo: #1a0f45;
+$color-violet: #3b1f8c;
+$color-purple: #7c3aed;
+$color-lavender: #a78bfa;
+$color-starlight: #e8d9ff;
+$color-white: #ffffff;
+$color-gold: #f6d860;
+$color-gold-dim: #c9a227;
+$color-rose: #f472b6;
+$color-cyan: #67e8f9;
+
+// Typography
+$font-display: "Cinzel Decorative", serif;
+$font-heading: "Cinzel", serif;
+$font-body: "Crimson Pro", serif;
+$font-sub: "Cormorant Garamond", serif;
+
+// Spacing
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2rem;
+$space-lg: 4rem;
+$space-xl: 8rem;
+
+// Breakpoints
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-mid: 0.5s ease;
+$transition-slow: 1s ease;
+$transition-cosmic: 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+// Shadows
+$shadow-glow-purple: 0 0 40px rgba(124, 58, 237, 0.5);
+$shadow-glow-gold: 0 0 30px rgba(246, 216, 96, 0.4);
+$shadow-glow-star: 0 0 20px rgba(232, 217, 255, 0.8);

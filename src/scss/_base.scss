@@ -1,0 +1,137 @@
+// =============================================
+// BASE STYLES
+// =============================================
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: $color-void;
+  color: $color-starlight;
+  font-family: $font-body;
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+// Custom cursor
+.cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: $color-gold;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition:
+    transform 0.1s,
+    width 0.3s,
+    height 0.3s,
+    background 0.3s;
+  box-shadow:
+    0 0 10px $color-gold,
+    0 0 20px rgba($color-gold, 0.5);
+
+  &.expanded {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba($color-gold, 0.6);
+  }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: $color-void;
+}
+::-webkit-scrollbar-thumb {
+  background: $color-violet;
+  border-radius: 2px;
+}
+
+// Stars canvas
+#stars-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+// Section common
+.section-label {
+  font-family: $font-heading;
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: $color-gold;
+  opacity: 0.8;
+  display: block;
+  margin-bottom: $space-sm;
+}
+
+.gold-line {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, $color-gold, transparent);
+  margin: $space-md auto;
+}
+
+// Reveal animations
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

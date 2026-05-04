@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stardust: O Mistério da Estrela</title>
+    <meta
+      name="description"
+      content="No mundo além do muro — onde estrelas caem e sonhos ganham vida. Uma jornada épica de amor, magia e destino."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/dist/css/style.min.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <canvas id="stars-canvas" aria-hidden="true"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Principal">
+      <a href="#hero" class="navbar__brand">✦ STARDUST</a>
+      <ul class="navbar__links">
+        <li><a href="#story">A História</a></li>
+        <li><a href="#characters">Personagens</a></li>
+        <li><a href="#highlights">Destaques</a></li>
+      </ul>
+      <a href="#story" class="navbar__cta">Descobrir</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-image">
+        <img
+          src="/dist/assets/images/cfb2b68b6046ab7ddc242f2eb7f8d42673b058003d69867a06c78aad443d57d4 (1).jpg"
+          alt="Yvaine — a estrela caída"
+        />
+        <div class="hero__bg-overlay"></div>
+      </div>
+      <div class="orb orb--1" aria-hidden="true"></div>
+      <div class="orb orb--2" aria-hidden="true"></div>
+      <div class="orb orb--3" aria-hidden="true"></div>
+
+      <span class="hero__badge"
+        >✦ &nbsp; Uma Aventura de Matthew Vaughn &nbsp; ✦</span
+      >
+
+      <h1 class="hero__title">
+        <span class="line-1">Stardust</span>
+        <span class="line-2">O Mistério da Estrela</span>
+      </h1>
+
+      <div class="hero__divider" aria-hidden="true">
+        <span class="line"></span>
+        <span class="star-icon">✦</span>
+        <span class="line"></span>
+      </div>
+
+      <p class="hero__tagline">
+        Além do muro que separa o mundo dos homens do reino das maravilhas,<br />
+        uma estrela caiu — e com ela, o destino de um jovem apaixonado.
+      </p>
+
+      <div class="hero__cta-group">
+        <a href="#story" class="hero__btn hero__btn--primary"
+          >✦ Explorar o Mundo</a
+        >
+        <a href="#characters" class="hero__btn hero__btn--ghost"
+          >Os Personagens</a
+        >
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Rolar</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="story">
+      <div class="story__inner">
+        <div class="story__text">
+          <span class="section-label reveal">A Sinopse</span>
+          <h2 class="story__heading reveal">
+            Além do muro,<br />
+            <em>um mundo de maravilhas</em>
+          </h2>
+          <p class="story__body reveal">
+            Na cidade inglesa de Wall, existe um muro de pedra que separa o
+            mundo dos mortais do reino mágico de Stormhold. O jovem Tristan
+            Thorn promete à sua amada Victoria trazer de presente uma estrela
+            cadente que cai além do muro proibido.
+          </p>
+          <p class="story__body reveal">
+            Ao cruzar o portal, ele descobre que a estrela é, na verdade, uma
+            jovem chamada Yvaine — bela, sarcástica e com um segredo que atrai a
+            cobiça de três feiticeiras malvadas e os herdeiros de um trono em
+            disputa.
+          </p>
+          <div class="story__quote reveal">
+            <blockquote>
+              "Nenhuma estrela cai por acidente. Cada luz no céu é um destino
+              esperando ser alcançado."
+            </blockquote>
+            <cite>— Stardust, 2007</cite>
+          </div>
+        </div>
+
+        <div class="story__visual reveal-right">
+          <div class="story__poster-frame">
+            <div class="story__poster-bg">
+              <img
+                src="/dist/assets/images/fbb9bf338b4e67a6153012e51b6e21cbee72f2092b244f483a4f2a1d1c8c4852.jpg"
+                alt="Yvaine caída"
+                class="story__poster-img"
+              />
+              <div class="story__poster-gradient"></div>
+              <span class="story__poster-title">STARDUST</span>
+              <span class="story__poster-year">2007 · Matthew Vaughn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stats__inner">
+        <div class="stats__item reveal">
+          <span class="stats__item-number">7.6</span>
+          <span class="stats__item-label">IMDb Rating</span>
+        </div>
+        <div class="stats__item reveal">
+          <span class="stats__item-number">128</span>
+          <span class="stats__item-label">Minutos de Magia</span>
+        </div>
+        <div class="stats__item reveal">
+          <span class="stats__item-number">2007</span>
+          <span class="stats__item-label">Ano de Lançamento</span>
+        </div>
+        <div class="stats__item reveal">
+          <span class="stats__item-number">88%</span>
+          <span class="stats__item-label">Rotten Tomatoes</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHARACTERS -->
+    <section class="characters" id="characters">
+      <div class="characters__intro">
+        <span class="section-label reveal">O Elenco</span>
+        <h2 class="reveal">Personagens Inesquecíveis</h2>
+        <p class="reveal">
+          Um jovem herói, uma estrela viva, uma bruxa imortal e um pirata dos
+          céus
+        </p>
+      </div>
+
+      <div class="characters__grid">
+        <div class="characters__card characters__card--tristan reveal">
+          <div class="characters__card-photo">
+            <img src="/dist/assets/images/tristan.jpg" alt="Tristan Thorn" />
+            <div class="characters__card-photo-overlay"></div>
+          </div>
+          <div class="characters__card-body">
+            <h3 class="characters__name">Tristan Thorn</h3>
+            <p class="characters__role">O Herói Improvável</p>
+            <p class="characters__bio">
+              Um jovem de Wall que cruza o muro proibido em busca de uma estrela
+              para conquistar o coração de sua amada. Charlie Cox empresta a ele
+              um charme ingênuo e genuíno.
+            </p>
+          </div>
+        </div>
+
+        <div class="characters__card characters__card--yvaine reveal">
+          <div class="characters__card-photo">
+            <img src="/dist/assets/images/yvaine.jpg" alt="Yvaine" />
+            <div class="characters__card-photo-overlay"></div>
+          </div>
+          <div class="characters__card-body">
+            <h3 class="characters__name">Yvaine</h3>
+            <p class="characters__role">A Estrela Caída</p>
+            <p class="characters__bio">
+              Uma estrela transformada em jovem ao cair em Stormhold. Claire
+              Danes a retrata com luminosidade e uma ironia encantadora que
+              esconde um coração imenso.
+            </p>
+          </div>
+        </div>
+
+        <div class="characters__card characters__card--lamia reveal">
+          <div class="characters__card-photo">
+            <img
+              src="/dist/assets/images/witches.jpg"
+              alt="As Bruxas — Lamia, Mormo e Empusa"
+            />
+            <div class="characters__card-photo-overlay"></div>
+          </div>
+          <div class="characters__card-body">
+            <h3 class="characters__name">As Bruxas</h3>
+            <p class="characters__role">Lamia, Mormo & Empusa</p>
+            <p class="characters__bio">
+              Três feiticeiras de séculos que buscam o coração da estrela para
+              recuperar sua juventude. Michelle Pfeiffer entrega uma vilã
+              deslumbrante e genuinamente aterrorizante.
+            </p>
+          </div>
+        </div>
+
+        <div class="characters__card characters__card--captain reveal">
+          <div class="characters__card-photo characters__card-photo--contain">
+            <img
+              src="/dist/assets/images/captain.jpg"
+              alt="Capitão Shakespeare"
+            />
+            <div class="characters__card-photo-overlay"></div>
+          </div>
+          <div class="characters__card-body">
+            <h3 class="characters__name">Capitão Shakespeare</h3>
+            <p class="characters__role">O Pirata dos Céus</p>
+            <p class="characters__bio">
+              Comandante de um navio voador que captura raios nas nuvens. Robert
+              De Niro rouba todas as cenas com uma performance hilária e
+              completamente inesquecível.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="highlights" id="highlights">
+      <div class="highlights__inner">
+        <div class="highlights__header">
+          <span class="section-label reveal">Destaques</span>
+          <h2 class="reveal">Cenas Que Ficam na Memória</h2>
+        </div>
+
+        <div class="highlights__grid">
+          <div class="highlights__item highlights__item--featured reveal">
+            <div class="highlights__item-visual">
+              <img
+                src="/dist/assets/images/cena 3.jpg"
+                alt="Yvaine — a queda da estrela"
+              />
+              <div class="highlights__item-overlay">
+                <div class="play-btn" role="img" aria-label="Reproduzir">▶</div>
+              </div>
+            </div>
+            <div class="highlights__item-content">
+              <h3>A Queda da Estrela</h3>
+              <p>
+                O momento mágico em que Yvaine cai de volta ao mundo mortal —
+                cena de abertura épica
+              </p>
+            </div>
+          </div>
+
+          <div class="highlights__item reveal">
+            <div class="highlights__item-visual">
+              <img
+                src="/dist/assets/images/capitao cena.webp"
+                alt="Capitão Shakespeare"
+                class="img-contain"
+              />
+              <div class="highlights__item-overlay">
+                <div class="play-btn" role="img" aria-label="Reproduzir">▶</div>
+              </div>
+            </div>
+            <div class="highlights__item-content">
+              <h3>O Capitão Shakespeare</h3>
+              <p>
+                A bordo do Casanova — com De Niro em sua melhor forma cômica e
+                surpreendente
+              </p>
+            </div>
+          </div>
+
+          <div class="highlights__item reveal">
+            <div class="highlights__item-visual">
+              <img
+                src="/dist/assets/images/cena 33.jpg"
+                alt="As bruxas com a pedra mágica"
+              />
+              <div class="highlights__item-overlay">
+                <div class="play-btn" role="img" aria-label="Reproduzir">▶</div>
+              </div>
+            </div>
+            <div class="highlights__item-content">
+              <h3>O Poder da Bruxa</h3>
+              <p>
+                Bruxa Lamia usa seus poderes mágicos contra Sal (a Bruxa Imunda)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__logo">
+        <span class="star" aria-hidden="true">✦</span>
+        <h3>STARDUST</h3>
+      </div>
+      <p class="footer__tagline">
+        "O amor é o único tesouro que brilha mais que uma estrela."
+      </p>
+      <nav class="footer__links" aria-label="Rodapé">
+        <a href="#story">A História</a>
+        <a href="#characters">Personagens</a>
+        <a href="#highlights">Destaques</a>
+      </nav>
+      <p class="footer__copy">
+        Landing page criada com <span>✦</span> Gulp &amp; SCSS &nbsp;·&nbsp;
+        Baseada no filme <span>Stardust (2007)</span> de Matthew Vaughn
+      </p>
+    </footer>
+
+    <script src="/src/js/main.js"></script>
+  </body>
+</html>
