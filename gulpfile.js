@@ -26,7 +26,7 @@ function styles() {
     .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
     .pipe(autoprefixer({ cascade: false }))
     .pipe(cleanCSS({ compatibility: "ie8" }))
-    .pipe(concat("style.css"))
+    .pipe(concat("style.min.css"))
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(browserSync.stream());
 }
@@ -34,7 +34,7 @@ function styles() {
 function scripts() {
   return gulp
     .src(paths.scripts.src)
-    .pipe(concat("main.js"))
+    .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest(paths.scripts.dest))
     .pipe(browserSync.stream());
