@@ -7,6 +7,8 @@
 
 # 🌠 Stardust: O Mistério da Estrela
 
+> 🧩 **O que este projeto comprova:** SCSS modular, HTML5 semântico, JavaScript ES6+ (padrão IIFE), HTML5 Canvas e automação de build com Gulp (autoprefixer, minificação, BrowserSync).
+
 Uma Landing Page cinematográfica e imersiva baseada no universo de *Stardust* (2007). Este projeto utiliza manipulação avançada de **Canvas**, animações de scroll customizadas e um workflow de automação profissional para entregar uma experiência de usuário mágica e performática.
 
 ## ✨ Funcionalidades em Destaque
